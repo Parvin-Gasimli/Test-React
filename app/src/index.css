@@ -3,28 +3,22 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  min-height: 100vh;
+button{
+  padding: .5rem;
+  font-size: 2rem;
+  
+  
+
+}
+div{
+  line-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   
 }
-nav{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 10vh;
-  width: 90%;
-  margin: auto;
-  /* border-bottom: 1px solid black; */
-  /* box-shadow: 5px 10px 10px black; */
-}
-ul{
-  display: flex;
-  width: 50%;
-  justify-content: space-between;
-  list-style: none;
-
-}
-h1{
-  letter-spacing: 3px;
-
+span{
+  padding: .5rem;
+  font-size: 2rem;
 }
