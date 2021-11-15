@@ -3,6 +3,7 @@
 
 function App() {
   return (
+    <>
     <nav>
       <h1>
         LOGO
@@ -11,11 +12,15 @@ function App() {
         <li>Main Page</li>
         <li>Project</li>
         <li>About Us</li>
-        <li> Product</li>
+        <li> Contact</li>
       
       </ul>
 
     </nav>
+    <section>
+
+    </section>
+    </>
   );
 }
 
