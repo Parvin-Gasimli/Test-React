@@ -89,7 +89,7 @@ function App() {
             let ProductPrice = item.querySelector(".details h2").textContent;
             count++;
             if (count > 1) {
-              item.querySelector("delete").classList.remove("visible");
+              item.querySelector(".delete").classList.remove(".visible");
             }
             item.querySelector(".amount").textContent=count;
             item.querySelector(".details h5").textContent=(ProductPrice*cartItems).toFixed(2)+"$";
@@ -107,6 +107,53 @@ function App() {
             }
             document.querySelector(".checkout h4").textContent=Math.fround(tprice+ProductPrice*1).toFixed(2);
             document.querySelector(".orderamount").textContent=document.querySelector(".checkout h4").textContent+"$";
+            break;
+          }
+          case"-":
+          {
+            let count = item.querySelector(".amount").textContent;
+            if(count!=1){
+            let ProductPrice = item.querySelector(".details h2").textContent;
+          
+            count--;
+            if (count > 1) {
+              item.querySelector(".delete").classList.remove("visible");
+     
+            }
+            item.querySelector(".amount").textContent=count;
+            item.querySelector(".details h5").textContent=(ProductPrice*cartItems).toFixed(2)+"$";
+            let tprice=Math.max(document.querySelector(".checkout h4").textContent);
+            let cargofree=tprice-(ProductPrice*count)
+            if(cargofree<500)
+            {
+              document.querySelector(".freeshipping").classList.add("visible")
+              document.querySelector(".cargoamount").classList.add("cargopricedelete")
+            }
+            else{
+              document.querySelector(".freeshipping").classList.remove("visible")
+              document.querySelector(".cargoamount").classList.remove("cargopricedelete")
+
+            }
+            document.querySelector(".checkout h4").textContent=Math.fround(tprice-ProductPrice*1).toFixed(2);
+            document.querySelector(".orderamount").textContent=document.querySelector(".checkout h4").textContent+"$";
+
+            break;
+           }
+           
+          } case"Deleted":{
+            let productPrice=item.querySelector(".details h2")
+            .textContent;
+            let tPrice=Math.max(document.querySelector(".checkout h4").textContent);
+            document.querySelector(".checkout h4").textContent=Math.max(tPrice-productPrice*1).toFixed(2);
+            document.querySelector(".orderamount").textContent=document.querySelector(".checkout h4").textContent+"$"
+
+            cartItems.item(index).getElementsByClassName.
+            animation="removeanimation 0.5s linear";
+            cartItems.item(index).addEventListener("animatonend",()=>{
+              cartItems.item(index).remove();
+              itemCount--;
+              document.querySelector(".mycart p").textContent=itemCount
+            })
             break;
           }
          
