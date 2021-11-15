@@ -1,0 +1,87 @@
+.Cartitem {
+    display: flex;
+    width: 98%;
+    height: 20vh;
+    margin-top: 10px;
+    border-bottom: 1px solid gray;
+}
+.Cartitem img {
+    width: 200px;
+    height: 85px;
+    object-fit: contain;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 0.2rem;
+    margin-bottom: 10px;
+}
+.quantity {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.quantity button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    padding: 0.2rem;
+    border-radius: 50%;
+    background: none;
+    border: 1px solid orangered;
+    color: orangered;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.quantity button:hover {
+    background: orangered;
+    color: white;
+}
+.amount {
+    color: orangered;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.details {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 3;
+    margin-left: 20px;
+}
+.details h5 {
+    display: flex;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: orangered;
+    align-items: center;
+}
+.details h2 {
+    visibility: hidden;
+}
+.details p {
+    margin-left: 5px;
+}
+.delete {
+    position: absolute;
+    display: none;
+    top: 60%;
+    left: 20%;
+    color: white;
+    background: rgb(75, 73, 73);
+    height: 30px;
+    border: 1px solid transparent;
+    width: 70px;
+    border-radius: 10px;
+    transition: 0.3s linear;
+}
+.delete:hover {
+    background: white;
+    color: black;
+    font-weight: bold;
+}
+.visible {
+    display: block;
+}
