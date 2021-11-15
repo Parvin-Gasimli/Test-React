@@ -1,13 +1,13 @@
 .Cartitem {
     display: flex;
     width: 98%;
-    height: 20vh;
+    height: 50vh;
     margin-top: 10px;
     border-bottom: 1px solid gray;
 }
 .Cartitem img {
     width: 200px;
-    height: 85px;
+    height: 220px;
     object-fit: contain;
     border: 1px solid gray;
     border-radius: 10px;

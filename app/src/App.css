@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mycart
+{
+    display: flex;
+    margin-left: 10px;
+
+}
+.mycart p {
+    margin-left: 10px;
+    margin-right: 5px;
+
+
+}
+.mycart h4
+{
+    color: orangered;
+    font-weight: lighter;
+
+}
+.main
+{
+    width: 90wh;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.itemsList{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
