@@ -1,5 +1,68 @@
-.checkout
-{
-position: sticky;
+.checkout {
+    position: sticky;
+    top: 30px;
+    width: 300px;
+    height: 50vh;
+    border: 1px solid gray;
+}
+.checkout h1 {
+    font-size: 1rem;
+}
+.checkout h4 {
+    display: flex;
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+}
+.checkout button {
+    width: 250px;
+    padding: 1rem 1rem;
+    margin-top: 10px;
+    background: darkorange;
+    border: none;
+    color: white;
 
+    font-size: large;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+.checkout button:hover {
+    background: rgb(230, 132, 12);
+}
+.desc {
+    margin-top: 10px;
+    background: rgba(255, 166, 0, 0.753);
+    padding: 0.5rem 1rem;
+    color: rgb(131, 82, 82);
+    text-align: justify;
+}
+.cargoAmount,
+.orderTotal {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+    font-weight: bold;
+}
+.money {
+    display: flex;
+    align-items: center;
+}
+.money p {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+.freeshipping {
+    font-weight: bold;
+    color: green;
+    font-size: 1rem;
+    display: none;
+}
+.cargopricedelete {
+    text-decoration: line-through;
+}
+
+.visible {
+    display: block;
+    text-decoration: none;
 }
